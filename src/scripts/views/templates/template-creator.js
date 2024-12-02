@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 import CONFIG from '../../globals/config';
 
 const createRestoItemTemplate = (resto) => `
