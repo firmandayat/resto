@@ -1,0 +1,317 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: 'Protest Riot', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea{
+  color: #4f6f52;
+  font-weight: bold;
+  outline-color: #4f6f52;
+  width: 100%;
+  border-radius: 7px;
+  height: 44px;
+}
+
+.label{
+  color: #4f6f52;
+}
+
+.button{
+  color: white;
+  border-radius: 7px;
+  width: 50%;
+  height: 44px;
+  padding: 4px;
+  border-color: transparent;
+  background-color: #4f6f52;
+}
+
+.button:hover{
+  color: #4f6f52;
+  border-radius: 7px;
+  width: 50%;
+  padding: 4px;
+  border-color: transparent;
+  background-color: whitesmoke;
+}
+
+.skip-link {
+  padding: 10px;
+  z-index: 3;
+  background-color: #4f6f52;
+  font-size: large;
+  position: fixed;
+  top: -70px;
+  text-decoration: none;
+  left: 15px;
+  height: 45px;
+  color: #d2e3c8;
+  margin-top: 15px;
+  font-family: 'Protest Riot';
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+header.nav {
+  top: 0;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  background-color: #d2e3c8;
+  box-shadow: 0px 0px 20px rgb(161, 160, 160);
+}
+
+.logo {
+  color: #4f6f52;
+  font-size: 2rem;
+}
+
+.text {
+  color: #4d4b50;
+}
+
+header.nav ul.list {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: #4f6f52;
+  font-size: 38px;
+}
+
+.toggle-btn {
+  color: #4f6f52;
+  font-size: 20px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px !important;
+}
+
+.toggle-btn i {
+  font-size: 60px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  font-size: 38px;
+  top: 65px;
+  width: 40%;
+  list-style: none;
+  height: 0;
+  text-align: center;
+  background-color: #d2e3c8;
+  right: 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+.dropdown-menu.open {
+  height: 17rem;
+}
+
+.dropdown-menu li a {
+  color: #4f6f52;
+  text-decoration: none;
+}
+
+.dropdown-menu li {
+  padding: 20px;
+}
+
+.dropdown-menu li a:hover {
+  transition: all 0.4s ease-in-out;
+  color: #86a789;
+}
+
+.bg-banner {
+  margin-top: 30px;
+  width: 100%;
+  height: 700px;
+}
+
+.container {
+  margin: 0 5%;
+}
+
+.description {
+  margin-top: 50px;
+}
+
+.restaurant {
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  color: #4f6f52;
+}
+
+.wrapper-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.wrapper-gallery{
+display: flex;
+gap: 10px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.wrapper-gallery img{
+width: 300px;
+display: flex;
+flex-wrap: wrap;
+border-radius: 10px;
+}
+
+.card {
+  margin: 10px 0px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #d2e3c8;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.card-review {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #d2e3c8;
+  transition: 0.3s;
+  background-color: white;
+  width: 35%;
+  height: 280px;
+  padding: 2rem;
+}
+
+.container-card {
+  padding: 20px;
+}
+
+.card h4 b {
+  color: #4f6f52;
+}
+
+.card p {
+  color: #333633;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card button {
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  background-color: #4f6f52;
+  border-radius: 10px;
+  width: 80px;
+  height: 45px;
+  font-weight: bold;
+  border-style: none;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #d2e3c8;
+  color: #4f6f52;
+  transition: all 0.4s ease-in-out;
+}
+
+.wrapper-detail{
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.wrapper-resto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: 100px;
+  gap: 30px;
+}
+
+.wrapper-favorite {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.flex{
+  display: flex;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.contact-us {
+  margin-top: 100px;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+footer .footer {
+  width: 100%;
+  background-color: #d2e3c8;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f6f52;
+  font-size: medium;
+  font-weight: 500;
+  margin-top: 3rem;
+}
